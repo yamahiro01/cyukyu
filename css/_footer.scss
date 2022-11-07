@@ -1,0 +1,61 @@
+@use "mixin";
+
+.footer {
+  background-color: #F8F8F8;
+  text-align: center;
+  padding-top: 43px;
+  padding-bottom: 49px;
+  
+
+  .main-ttl {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+  }
+
+  .policy {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+
+    &-1 {
+      margin-left: 29px;  // 位置調整の為
+      margin-right: 29px;
+
+      @include mixin.sp {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+
+        @include mixin.sp {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-2 {
+      // margin-left: 14.5px;
+
+      a {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+
+        @include mixin.sp {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 52px;
+  }
+}

@@ -1,0 +1,27 @@
+// 共通
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+  padding-top: 94px;
+  overflow-x: hidden;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+#wrapper {
+  width:100%;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+img {
+  width: 100%;  //Swiper対策の為、max-widthの使用禁止
+  height: auto;
+}

@@ -1,0 +1,290 @@
+@use "mixin";
+
+// 3つの特徴
+.features {
+  padding-top: 71px;
+  padding-bottom: 154px;
+
+  .inner {
+    max-width: 1022px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .main-ttl {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.4375;
+      text-align: center;
+      margin-bottom: 10px;
+
+      @include mixin.sp {
+        font-size: 28px;
+      }
+    }
+  
+    .en-ttl {
+      color: #3BA6C9;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    // 高速コーディング
+    .first {
+      margin-top: 57px;
+
+      &-ttl {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 49px;
+
+        @include mixin.sp {
+          margin-bottom: 30px;
+        }
+      }
+      
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        // padding: 0 135px 0 192px;  paddingは使用しない
+
+        @include mixin.tab {
+          justify-content: space-around;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include mixin.sp {
+          display: block;
+        }
+      }
+
+      .img-area-img {
+
+        @include mixin.tab {
+          width: 50%;
+        }
+
+        @include mixin.sp {
+          width: 100%;
+        }
+      }
+
+      &-contents {
+        padding-top: 47px;
+
+        @include mixin.sp {
+          text-align: center;
+          padding-top: 40px;
+        }
+
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 41.5px;
+          margin-bottom: 45px;
+
+          @include mixin.tab {
+            font-size: 22px;
+          }
+
+          @include mixin.sp {
+            font-size: 20px;
+            margin-bottom: 25px;
+          }
+
+          .tab-br {
+            display: none;
+
+            @include mixin.tab {
+              display: block;
+            }
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          line-height:25.5px;
+
+          .tab-br {
+            display: none;
+
+            @include mixin.tab {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    // 高品質
+    .second {
+      padding-top: 86px;
+
+      @include mixin.sp {
+        padding-top: 80px;
+      }
+
+      &-ttl {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 59px;
+
+        @include mixin.sp {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        // padding: 0 135px 0 221px;
+
+        @include mixin.tab {
+          justify-content: space-around;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include mixin.sp {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &-contents {
+        padding-top: 2px;
+
+        @include mixin.sp {
+          text-align: center;
+          padding-top: 40px;
+        }
+
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 43.666px;
+          margin-bottom: 40px;
+
+          @include mixin.tab {
+            font-size: 22px;
+          }
+
+          @include mixin.sp {
+            font-size: 20px;
+            margin-bottom: 25px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          line-height:25.333px;
+
+          .tab-br {
+            display: none;
+
+            @include mixin.tab {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .img-area-img {
+
+        @include mixin.tab {
+          width: 50%;
+        }
+
+        @include mixin.sp {
+          width: 100%;
+        }
+      }
+    }
+
+    // 迅速なレスポンス
+    .third {
+      padding-top: 136px;
+
+      @include mixin.sp {
+        padding-top: 80px;
+      }
+
+      &-ttl {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 62px;
+
+        @include mixin.sp {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        // padding: 0 222px 0 221px;
+
+        @include mixin.tab {
+          justify-content: space-around;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        @include mixin.sp {
+          display: block;
+        }
+      }
+
+      .img-area-img {
+
+        @include mixin.tab {
+          width: 50%;
+        }
+
+        @include mixin.sp {
+          width: 100%;
+        }
+      }
+
+      &-contents {
+        padding-top: 20px;
+
+        @include mixin.sp {
+          text-align: center;
+          padding-top: 40px;
+        }
+
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 43.666px;
+          margin-bottom: 33px;
+
+          @include mixin.tab {
+            font-size: 22px;
+          }
+
+          @include mixin.sp {
+            font-size: 20px;
+            margin-bottom: 25px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          line-height:27px;
+        }
+      }
+    }
+  }
+}

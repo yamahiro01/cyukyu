@@ -1,0 +1,189 @@
+@use "mixin";
+
+.blog {
+  background-color: #EEFBFB;
+  padding-top: 55px;
+  padding-bottom: 91px;
+
+  .main-ttl {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+    
+    @include mixin.sp {
+      font-size: 28px;
+    }
+  }
+
+  .en-ttl {
+    text-align: center;
+    color: #3BA6C9;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 11px;
+  }
+
+  &-wrapper {
+    display: flex;
+    // justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 54px;
+
+    @include mixin.sp {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .first {
+      // 画面幅:100vw - (両サイドpadding + カード間margin: 200px / 3分割)
+      width: calc((100vw - 200px) / 3);
+      background-color: #FFFFFF;
+      box-shadow: 0 3px 6px #00000029;
+      position: relative;
+
+      @include mixin.sp {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .writing {
+        padding: 14px 30px 0 18px;
+
+        @include mixin.tab {
+          padding: 14px 18px 0 18px;
+        }
+
+        .text {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 26px;
+          min-height: calc(26px * 3);  //.dateの高さ調整(line-height × 3行)
+
+          @include mixin.sp {
+            text-align: center;
+            // margin-bottom: 20px;
+          }
+        }
+  
+        .date {
+          position: absolute;
+          bottom: 10px;
+          right: 32px;
+          color: #444444;
+          text-align: right;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 24px;
+          // padding-bottom: 10px;
+
+          @include mixin.sp {
+            position: initial;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .second {
+      width: calc((100vw - 200px) / 3);
+      background-color: #FFFFFF;
+      margin: 0 30px;
+      box-shadow: 0 3px 6px #00000029;
+      // position: relative;
+
+      @include mixin.sp {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .writing {
+        padding: 14px 29px 0 18px;
+
+        @include mixin.tab {
+          padding: 14px 18px 0 18px;
+        }
+
+        .text {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 26px;
+          min-height: calc(26px * 3);  //.dateの高さ調整(line-height × 3行)
+
+          @include mixin.sp {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+  
+        .date {
+          // position: absolute;
+          // bottom: 10px;
+          // right: 32px;
+          color: #444444;
+          text-align: right;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 24px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .third {
+      width: calc((100vw - 200px) / 3);
+      background-color: #FFFFFF;
+      box-shadow: 0 3px 6px #00000029;
+      position: relative;
+
+      @include mixin.sp {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .writing {
+        padding: 14px 45px 0 18px;
+
+        @include mixin.tab {
+          padding: 14px 18px 0 18px;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 26px;
+        min-height: calc(26px * 3);  //.dateの高さ調整(line-height × 3行)
+
+        @include mixin.sp {
+          text-align: center;
+        }
+      }
+
+      .date {
+        position: absolute;
+        bottom: 10px;
+        right: 32px;
+        color: #444444;
+        text-align: right;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        // padding-bottom: 10px;
+
+        @include mixin.sp {
+          position: initial;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}

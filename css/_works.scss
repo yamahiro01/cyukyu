@@ -1,0 +1,105 @@
+@use "mixin";
+
+.works {
+  background-color: #FFFFFF;
+  padding-top: 55px;
+  padding-bottom: 90px;
+
+  .main-ttl {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+
+    @include mixin.sp {
+      font-size: 28px;
+    }
+  }
+
+  .en-ttl {
+    text-align: center;
+    color: #3BA6C9;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 11px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    // justify-content: center;  //Swiper使用時は使用禁止
+    margin-top: 68px;
+
+    .first {
+      width: 322px;
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      // margin-right: 56px;  //Swiper使用時は全てにmarginを適用
+
+      .text {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-top: 18px;
+        margin-left: 18px;
+      }
+
+      .worker {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-left: 18px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .second {
+      width: 322px;
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      // margin-right: 56px;  //Swiper使用時は全てにmarginを適用
+
+      .text {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-top: 18px;
+        margin-left: 18px;
+      }
+
+      .worker {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-left: 18px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .third {
+      // width: 322px;
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      // margin-right: 56px;  //Swiper使用時は全てにmarginを適用
+      
+      .text {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-top: 25px;
+        margin-left: 18px;
+      }
+
+      .worker {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-left: 18px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

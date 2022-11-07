@@ -1,0 +1,236 @@
+@use "mixin";
+
+.contact {
+  background: linear-gradient(90deg, #05A5FA, #63FBD7, #67FFD6);
+  padding-top: 63px;
+  padding-bottom: 70px;
+
+  .main-ttl {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+
+    @include mixin.sp {
+      font-size: 28px;
+    }
+  }
+
+  .en-ttl {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 7px;
+  }
+
+  .message {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 36px;
+  }
+
+  &-form {
+    background-color: #FFFFFF;
+    max-width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    padding-top: 31px;
+    padding-bottom: 35px;
+    box-shadow: 0 3px 6px #00000029;
+
+    @include mixin.tab {
+      width: 90%;
+    }
+
+    .fill-area {
+      padding-left: 62px;
+
+      @include mixin.sp {
+        padding-left: 5%;
+      }
+
+      .name-block {
+        display: flex;
+        align-items: center;
+  
+        .name {
+          font-size: 16px; 
+          font-weight: bold;
+          line-height: 24px;
+          margin-right: 23px;
+        }
+      }
+  
+      .name-area {
+        background-color: #EEFBFB;
+        max-width: 499px;
+        width: 100%;
+        height: 43px;
+        border: none;
+        padding: 0;
+        margin-top: 36px;
+        margin-bottom: 25px;
+        border-radius: 3px;
+
+        &::placeholder {
+          color: #aaa;
+          padding-left: 20px;
+        }
+
+        @include mixin.sp {
+          width: 95%;
+        }
+      }
+  
+      .mail-block {
+        display: flex;
+        align-items: center;
+  
+        .mail {
+          font-size: 16px; 
+          font-weight: bold;
+          line-height: 24px;
+          margin-right: 20px;
+        }
+      }
+  
+      .mail-area {
+        background-color: #EEFBFB;
+        max-width: 499px;
+        width: 100%;
+        height: 43px;
+        border: none;
+        padding: 0;
+        margin-top: 36px;
+        margin-bottom: 19px;
+        border-radius: 3px;
+
+        &::placeholder {
+          color: #aaa;
+          padding-left: 20px;
+        }
+
+        @include mixin.sp {
+          width: 95%;
+        }
+      }
+  
+      .inquiry-block {
+        display: flex;
+        align-items: center;
+  
+        .inquiry {
+          font-size: 16px; 
+          font-weight: bold;
+          line-height: 24px;
+          margin-right: 23px;
+        }
+      }
+  
+      .inquiry-area {
+        background-color: #EEFBFB;
+        max-width: 783px;
+        width: 100%;
+        height: 179px;
+        border: none;
+        padding: 0;
+        margin-top: 36px;
+        border-radius: 3px;
+
+        &::placeholder {
+          color: #aaa;
+          padding-left: 20px;
+          padding-top: 20px;
+        }
+
+        @include mixin.tab {
+          width: 95%;
+        }
+      }
+  
+      .required {
+        width: 60px;
+        height: 30px;
+        background-color: #0C449B;
+        padding: 4px 16px 6px 16px;
+        border-radius: 10px;
+        
+        p {
+          color: #FFFFFF;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .privacy {
+      margin-top: 27px;
+      text-align: center;
+
+      #consent {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #707070;
+        margin: 0 10px 0 0;
+        position: relative;
+        top: 4px;
+      }
+
+      label {
+        font-size: 16px; 
+        font-weight: bold;
+        line-height: 24px;
+      }
+    }
+
+    .send {
+      text-align: center;
+      margin-top: 30px;
+
+      button {
+        background-color: #B2B2B2;
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 8px 50px 9px 49px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none;
+      }
+
+      // 送信可能状態で本来のボタンの色に変更
+      .is-checked {
+        background: linear-gradient(90deg, #FA41CC, #6020B0);
+        cursor: pointer;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+
+        &:hover {
+          opacity: 0.7;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+
+  .end-message {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .false-message {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+  }
+}

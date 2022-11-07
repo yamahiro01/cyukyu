@@ -1,0 +1,128 @@
+@use "mixin";
+
+.price {
+  background-color: #EEFBFB;
+  padding-top: 55px;
+  padding-bottom: 68px;
+
+  .main-ttl {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 11px;
+
+    @include mixin.sp {
+      font-size: 28px;
+    }
+  }
+  
+  .en-ttl {
+    color: #3BA6C9;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .price-tb {
+    max-width: 926px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    box-shadow: 0 3px 6px #00000029;
+
+    @include mixin.tab {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mixin.sp {
+      width: 90%;
+      margin-top: 40px;
+    }
+
+    tr {
+
+      th {
+        border: 1px solid #E5E5E5;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: left;
+        padding: 35px 33.5px 35px 19px;
+        white-space: nowrap;
+
+        @include mixin.tab {
+          width: 30%;
+          padding: 35px 19px;
+        }
+
+        @include mixin.sp {
+          width: 100%;
+          display: block;
+          text-align: center;
+        }
+
+        .tab-br {
+          display: none;
+
+          @include mixin.tab {
+            display: block;
+          }
+
+          @include mixin.sp {
+            display: none;
+          }
+        }
+      }
+
+      td {
+        border: 1px solid #E5E5E5;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: left;
+        padding: 35px 521px 35px 30.5px;
+        white-space: nowrap;
+
+        @include mixin.tab {
+          padding: 35px 30.5px;
+        }
+
+        @include mixin.sp {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+    .erase-1 {
+      border-top: none;
+    }
+
+    .erase-2 {
+      border-left: none;
+    }
+
+    .erase-3 {
+      border-right: none;
+    }
+
+    .erase-4 {
+      border-bottom: none;
+    }
+  }
+
+  .attention {
+    color: #444444;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 36px;
+  }
+}
